@@ -1,0 +1,64 @@
+#mobile-menu {
+    background-color: #f0cad4f7;
+    padding: 50px;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    ul {
+        list-style: none;
+        li {
+            text-align: center;
+            a, span {
+                @include links;
+                color: black;
+                display: inline-block;
+                margin: 15px 0;
+                font-size: 25px;
+            }
+            a:hover {
+                color: $darkpink;
+            }
+            #projects-dropdown-mobile {
+                ul {
+                    margin: 20px 0;
+                    li {
+                        display: block;
+                        a {
+                            margin: 0 0 20px 0;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//======================================================================================
+//                                      MEDIA QUERIES
+//======================================================================================
+ 
+@media screen and (min-width: 768px) {
+    #mobile-menu {
+        ul {
+            li {
+                a, span {
+                    margin-bottom: 35px;
+                    font-size: 35px;
+                }
+                #projects-dropdown-mobile {
+                    ul {
+                        margin-bottom: 20px;
+                        li {
+                            display: block;
+                            a {
+                                margin: 0 0 20px 0;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
